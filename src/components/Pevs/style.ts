@@ -13,7 +13,7 @@ export const ContainerHeader = styled.header`
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  h1 {
+  > h1 {
     font-size: 2.4rem;
   }
 `;
@@ -21,7 +21,6 @@ export const ContainerHeader = styled.header`
 export const ContainerMain = styled.main`
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 4rem;
   span {
     font-size: 1.6rem;
@@ -29,10 +28,30 @@ export const ContainerMain = styled.main`
   }
 `;
 
-export const ContainerCards = styled.div`
-  margin-top: 4rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-`
+export const ContentTable = styled.table`
+  margin-top: 2rem;
+  border-collapse: collapse;
+  td,
+  th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  tr:nth-child(even) {
+    background-color: #262626;
+  }
+  tr:hover {
+    background-color: #121212;
+  }
+  th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #53803e;
+    font-size: 1.4rem;
+    color: #fff;
+  }
+  td {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+`;
