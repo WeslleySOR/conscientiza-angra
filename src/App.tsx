@@ -1,11 +1,11 @@
 import { AboutSelectiveCollection } from "./components/AboutSelectiveCollection";
-import { Home } from "./components/Home";
+import { AboutUs } from "./components/AboutUs";
 import * as SC from "./styles/App";
 
 function App() {
   return (
     <SC.Container>
-      <Home />
+      <AboutUs />
       <AboutSelectiveCollection />
     </SC.Container>
   );

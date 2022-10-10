@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const Container = styled.div`
   display: flex;
-  scroll-margin-top: 164px;
+  scroll-margin-top: 148px;
   > div:nth-child(odd) {
     background-color: #262626;
   }

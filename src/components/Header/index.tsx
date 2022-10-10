@@ -15,11 +15,10 @@ export function Header() {
     <SC.HeaderContainer pageScrolled={pageScrolled}>
       <Logo />
       <SC.HeaderNavigation>
-        <a href="#inicio">Inicio</a>
+        <a href="#sobre-nos">Sobre nós</a>
         <a href="#sobre-a-coleta">Sobre a coleta</a>
         <a href="">Pevs</a>
         <a href="">Dicas</a>
-        <a href="">Sobre nós</a>
       </SC.HeaderNavigation>
     </SC.HeaderContainer>
   );
