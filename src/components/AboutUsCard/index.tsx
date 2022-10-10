@@ -5,7 +5,7 @@ import randomPic from '/assets/random-pic.jpg'
 export function AboutUsCard() {
   return (
     <SC.Container>
-      <img src={randomPic} alt="Imagem aleatoria" />
+      <img loading="lazy" src={randomPic} alt="Imagem aleatoria" />
       <SC.Content>
         <h1>Trung Thanh Nguyen - CEO</h1>
         <p>
