@@ -1,9 +1,11 @@
 import * as SC from "./style";
 
+import randomPic from '/assets/random-pic.jpg'
+
 export function AboutUsCard() {
   return (
     <SC.Container>
-      <img src="https://random.imagecdn.app/512/256" alt="Imagem aleatoria" />
+      <img src={randomPic} alt="Imagem aleatoria" />
       <SC.Content>
         <h1>Trung Thanh Nguyen - CEO</h1>
         <p>
