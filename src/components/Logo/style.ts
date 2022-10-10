@@ -6,8 +6,8 @@ export const LogoContainer = styled.div`
   gap: 2rem;
   img {
     width: fit-content;
-    height: 96px;
-    width: 96px;
+    height: 64px;
+    width: 64px;
   }
   span {
     display: flex;
@@ -15,4 +15,12 @@ export const LogoContainer = styled.div`
     font-size: 2.6rem;
     text-shadow: 0px 3px 3px rgba(0, 0, 0, 1);
   }
-`
+  @media (max-width: 768px) {
+    img {
+      display: none;
+    }
+    span {
+      font-size: 1.8rem;
+    }
+  }
+`;

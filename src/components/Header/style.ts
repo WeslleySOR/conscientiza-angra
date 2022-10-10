@@ -14,8 +14,11 @@ export const HeaderContainer = styled.header<IHeaderContainer>`
   background-color: #7aaf60;
   color: #fff;
   transition: opacity 0.3s;
-  opacity: ${props => props.pageScrolled ? 0.95 : 1};
-`
+  opacity: ${(props) => (props.pageScrolled ? 0.95 : 1)};
+  @media (max-width: 768px) {
+    padding: 2rem 2rem;
+  }
+`;
 
 export const HeaderNavigation = styled.nav`
   display: flex;
@@ -32,4 +35,12 @@ export const HeaderNavigation = styled.nav`
       text-decoration: underline;
     }
   }
-`
+  @media (max-width: 768px) {
+    gap: 1rem;
+    margin-inline: 0;
+    a {
+      font-size: 1.2rem;
+      padding: 0;
+    }
+  }
+`;

@@ -6,6 +6,9 @@ export const Container = styled.div`
   > div:nth-child(odd) {
     background-color: #262626;
   }
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 export const Content = styled.div`
@@ -29,5 +32,8 @@ export const Content = styled.div`
   span {
     font-size: 1.6rem;
     line-height: 2.8rem;
+  }
+  @media (max-width: 768px) {
+    
   }
 `
