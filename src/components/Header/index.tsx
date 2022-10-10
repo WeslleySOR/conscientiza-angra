@@ -17,7 +17,7 @@ export function Header() {
       <SC.HeaderNavigation>
         <a href="#sobre-a-coleta">Sobre a coleta</a>
         <a href="#pevs">Pevs</a>
-        <a href="">Dicas</a>
+        <a href="#dicas">Dicas</a>
         <a href="#sobre-nos">Sobre nós</a>
       </SC.HeaderNavigation>
     </SC.HeaderContainer>

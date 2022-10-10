@@ -21,15 +21,30 @@ export const ContainerHeader = styled.header`
 export const ContainerMain = styled.main`
   display: flex;
   flex-direction: column;
+  gap: 2rem;
   padding: 4rem;
   span {
     font-size: 1.6rem;
     line-height: 2.8rem;
+    a {
+      color: #fff;
+    }
+    &.localizations {
+      padding-top: 4rem;
+      border-top: 1px solid #fafafa;
+    }
+  }
+  ol {
+    padding-inline: 2rem;
+    list-style: disc;
+    li {
+      font-size: 1.6rem;
+      line-height: 2.8rem;
+    }
   }
 `;
 
 export const ContentTable = styled.table`
-  margin-top: 2rem;
   border-collapse: collapse;
   td,
   th {
