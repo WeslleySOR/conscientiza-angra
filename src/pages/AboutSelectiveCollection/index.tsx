@@ -20,7 +20,7 @@ export function AboutSelectiveCollection() {
   return (
     <>
       <div
-        className="scroll-mt-[80px] mt-4 relative flex odd:bg-[#262626] md:scroll-mt-[96px] lg:scroll-mt-[132px] xl:mx-12 xl:mt-8"
+        className="scroll-mt-[152px] mt-[4.5rem] relative flex odd:bg-[#262626] md:scroll-mt-[96px] lg:scroll-mt-[132px] xl:mx-12 xl:mt-8"
         id="sobre-a-coleta"
       >
         <div ref={sliderRef} className="keen-slider">

@@ -13,7 +13,7 @@ export function Header() {
 
   return (
     <header
-      className={`z-50 fixed flex justify-around py-4 w-full bg-[#7aaf60] text-[#fff] transition-opacity duration-300 ${
+      className={`z-50 fixed flex flex-col items-center md:flex-row md:justify-around py-4 w-full bg-[#7aaf60] text-[#fff] transition-opacity duration-300 ${
         pageScrolled ? "opacity-95" : "opacity-100"
       }`}
     >
@@ -25,27 +25,27 @@ export function Header() {
         />
         <span className="flex my-auto text-lg lg:text-xl">Conscientiza Angra</span>
       </div>
-      <nav className="hidden md:flex md:items-center">
+      <nav className="flex items-center">
         <a
-          className="text-[#fff] no-underline text-base font-medium p-5 underline-offset-8 lg:text-lg hover:underline"
+          className="text-[#fff] no-underline text-sm p-4 md:text-base font-medium md:p-5 underline-offset-8 lg:text-lg hover:underline"
           href="#sobre-a-coleta"
         >
           Sobre a coleta
         </a>
         <a
-          className="text-[#fff] no-underline text-base font-medium p-5 underline-offset-8 lg:text-lg hover:underline"
+          className="text-[#fff] no-underline text-sm p-4 md:text-base font-medium md:p-5 underline-offset-8 lg:text-lg hover:underline"
           href="#pevs"
         >
           Pevs
         </a>
         <a
-          className="text-[#fff] no-underline text-base font-medium p-5 underline-offset-8 lg:text-lg hover:underline"
+          className="text-[#fff] no-underline text-sm p-4 md:text-base font-medium md:p-5 underline-offset-8 lg:text-lg hover:underline"
           href="#dicas"
         >
           Dicas
         </a>
         <a
-          className="text-[#fff] no-underline text-base font-medium p-5 underline-offset-8 lg:text-lg hover:underline"
+          className="text-[#fff] no-underline text-sm p-4 md:text-base font-medium md:p-5 underline-offset-8 lg:text-lg hover:underline"
           href="#sobre-nos"
         >
           Sobre nós
