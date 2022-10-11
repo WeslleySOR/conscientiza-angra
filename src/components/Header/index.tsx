@@ -1,6 +1,4 @@
-import { useContext, useState } from "react";
-import { MobileMenuContext } from "../../contexts/MobileMenuContext";
-import { MobileMenuButton } from "../MobileMenuButton";
+import { useState } from "react";
 
 import logoImage from "/assets/logo.svg";
 
@@ -15,40 +13,39 @@ export function Header() {
 
   return (
     <header
-      className={`z-50 fixed flex justify-center py-4 w-full bg-[#7aaf60] text-[#fff] transition-opacity duration-300 ${
+      className={`z-50 fixed flex justify-around py-4 w-full bg-[#7aaf60] text-[#fff] transition-opacity duration-300 ${
         pageScrolled ? "opacity-95" : "opacity-100"
       }`}
     >
-      <MobileMenuButton />
-      <div className="select-none flex gap-4">
+      <div className="select-none flex items-center gap-4">
         <img
-          className="w-12 h-12"
+          className="w-12 h-12 lg:w-16 lg:h-16"
           src={logoImage}
           alt="Conscientiza Angra Logo"
         />
-        <span className="flex my-auto text-lg">Conscientiza Angra</span>
+        <span className="flex my-auto text-lg lg:text-xl">Conscientiza Angra</span>
       </div>
       <nav className="hidden md:flex md:items-center">
         <a
-          className="text-[#fff] no-underline  text-base font-medium p-5 underline-offset-8 hover:underline"
+          className="text-[#fff] no-underline text-base font-medium p-5 underline-offset-8 lg:text-lg hover:underline"
           href="#sobre-a-coleta"
         >
           Sobre a coleta
         </a>
         <a
-          className="text-[#fff] no-underline  text-base font-medium p-5 underline-offset-8 hover:underline"
+          className="text-[#fff] no-underline text-base font-medium p-5 underline-offset-8 lg:text-lg hover:underline"
           href="#pevs"
         >
           Pevs
         </a>
         <a
-          className="text-[#fff] no-underline  text-base font-medium p-5 underline-offset-8 hover:underline"
+          className="text-[#fff] no-underline text-base font-medium p-5 underline-offset-8 lg:text-lg hover:underline"
           href="#dicas"
         >
           Dicas
         </a>
         <a
-          className="text-[#fff] no-underline  text-base font-medium p-5 underline-offset-8 hover:underline"
+          className="text-[#fff] no-underline text-base font-medium p-5 underline-offset-8 lg:text-lg hover:underline"
           href="#sobre-nos"
         >
           Sobre nós

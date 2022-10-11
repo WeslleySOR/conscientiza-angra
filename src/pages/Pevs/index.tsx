@@ -13,7 +13,7 @@ export function Pevs() {
   };
   return (
     <div
-      className="scroll-mt-[80px] flex flex-col bg-[#343434] text-[#fff]"
+      className="scroll-mt-[80px] flex flex-col bg-[#343434] text-[#fff] md:scroll-mt-[96px] lg:scroll-mt-[132px] xl:mx-12"
       id="pevs"
     >
       <header className="flex items-center justify-center p-6">
@@ -33,7 +33,7 @@ export function Pevs() {
           vezes estão associados à cores que indicam quais materiais devem ser
           comportados no receptor, como determina a{" "}
           <a
-            className="text-[#fff]"
+            className="text-[#fff] underline"
             href="http://conama.mma.gov.br/?option=com_sisconama&task=arquivo.download&id=273"
             target="__blank"
           >
@@ -80,57 +80,57 @@ export function Pevs() {
             <>
             <div>
               <span>Segunda-Feira: </span>
-              {getLocationsByDay(0).map((location, index) => 
-                <span>
-                  {location.name}{index === getLocationsByDay(0).length - 1 ? "." : ", "}
+              {getLocationsByDay(0).map((localization, index) => 
+                <span key={localization.name}>
+                  {localization.name}{index === getLocationsByDay(0).length - 1 ? "." : ", "}
                 </span>  
               )}
             </div>
             <div>
               <span>Terça-Feira: </span>
-              {getLocationsByDay(1).map((location, index) => 
-                <span>
-                  {location.name}{index === getLocationsByDay(1).length - 1 ? "." : ", "}
+              {getLocationsByDay(1).map((localization, index) => 
+                <span key={localization.name}>
+                  {localization.name}{index === getLocationsByDay(1).length - 1 ? "." : ", "}
                 </span>  
               )}
             </div>
             <div>
               <span>Quarta-Feira: </span>
-              {getLocationsByDay(2).map((location, index) => 
-                <span>
-                  {location.name}{index === getLocationsByDay(2).length - 1 ? "." : ", "}
+              {getLocationsByDay(2).map((localization, index) => 
+                <span key={localization.name}>
+                  {localization.name}{index === getLocationsByDay(2).length - 1 ? "." : ", "}
                 </span>  
               )}
             </div>
             <div>
               <span>Quinta-Feira: </span>
-              {getLocationsByDay(3).map((location, index) => 
-                <span>
-                  {location.name}{index === getLocationsByDay(3).length - 1 ? "." : ", "}
+              {getLocationsByDay(3).map((localization, index) => 
+                <span key={localization.name}>
+                  {localization.name}{index === getLocationsByDay(3).length - 1 ? "." : ", "}
                 </span>  
               )}
             </div>
             <div>
               <span>Sexta-Feira: </span>
-              {getLocationsByDay(4).map((location, index) => 
-                <span>
-                  {location.name}{index === getLocationsByDay(4).length - 1 ? "." : ", "}
+              {getLocationsByDay(4).map((localization, index) => 
+                <span key={localization.name}>
+                  {localization.name}{index === getLocationsByDay(4).length - 1 ? "." : ", "}
                 </span>  
               )}
             </div>
             <div>
               <span>Sábado: </span>
-              {getLocationsByDay(5).map((location, index) => 
-                <span>
-                  {location.name}{index === getLocationsByDay(5).length - 1 ? "." : ", "}
+              {getLocationsByDay(5).map((localization, index) => 
+                <span key={localization.name}>
+                  {localization.name}{index === getLocationsByDay(5).length - 1 ? "." : ", "}
                 </span>  
               )}
             </div>
             <div>
               <span>Domingo: </span>
-              {getLocationsByDay(6).map((location, index) => 
-                <span>
-                  {location.name}{index === getLocationsByDay(6).length - 1 ? "." : ", "}
+              {getLocationsByDay(6).map((localization, index) => 
+                <span key={localization.name}>
+                  {localization.name}{index === getLocationsByDay(6).length - 1 ? "." : ", "}
                 </span>  
               )}
             </div>

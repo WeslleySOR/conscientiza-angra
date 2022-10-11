@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-[#ebf3e7];
+  @apply bg-[#ebf3e7] max-w-[100vw] overflow-x-hidden;
 }
 html {
   @apply font-montserrat scroll-smooth;
