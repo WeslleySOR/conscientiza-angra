@@ -1,12 +1,10 @@
-import { localizations } from "../../utils/variables";
 import { TipsCard } from "../TipsCard";
-import * as SC from "./style";
 
 export function Tips() {
   return (
-    <SC.Container id="dicas">
-      <h1>Dicas de reaproveitamento</h1>
+    <div className="scroll-mt-[148px] flex flex-col rounded-md bg-[#343434] text-[#fff]" id="dicas">
+      <h1 className="text-lg p-8 text-center">Dicas de reaproveitamento</h1>
       <TipsCard />
-    </SC.Container>
+    </div>
   );
 }

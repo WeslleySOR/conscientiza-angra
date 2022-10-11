@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Logo } from "../Logo";
-import * as SC from "./style";
 
 export function Header() {
   const [pageScrolled, setPageScrolled] = useState(false);
@@ -10,16 +9,18 @@ export function Header() {
     if (lastKnownScrollPosition > 0) return setPageScrolled(true);
     return setPageScrolled(false);
   });
-  
+
   return (
-    <SC.HeaderContainer pageScrolled={pageScrolled}>
+    <header
+      className={`z-50 fixed flex justify-between py-8 px-24 w-full bg-[#7aaf60] text-[#fff] transition-opacity duration-300 ${pageScrolled ? 'opacity-95' : 'opacity-100'}`}
+    >
       <Logo />
-      <SC.HeaderNavigation>
-        <a href="#sobre-a-coleta">Sobre a coleta</a>
-        <a href="#pevs">Pevs</a>
-        <a href="#dicas">Dicas</a>
-        <a href="#sobre-nos">Sobre nós</a>
-      </SC.HeaderNavigation>
-    </SC.HeaderContainer>
+      <nav className="flex mx-16 items-center">
+        <a className="text-[#fff] no-underline  text-base font-medium p-5 underline-offset-8 hover:underline" href="#sobre-a-coleta">Sobre a coleta</a>
+        <a className="text-[#fff] no-underline  text-base font-medium p-5 underline-offset-8 hover:underline" href="#pevs">Pevs</a>
+        <a className="text-[#fff] no-underline  text-base font-medium p-5 underline-offset-8 hover:underline" href="#dicas">Dicas</a>
+        <a className="text-[#fff] no-underline  text-base font-medium p-5 underline-offset-8 hover:underline" href="#sobre-nos">Sobre nós</a>
+      </nav>
+    </header>
   );
 }

@@ -1,18 +1,16 @@
-import * as SC from "./style";
-
 import randomPic from '/assets/random-pic.jpg'
 
 export function AboutUsCard() {
   return (
-    <SC.Container>
+    <div className="flex flex-col gap-8 w-96 bg-[#4b7139]">
       <img loading="lazy" src={randomPic} alt="Imagem aleatoria" />
-      <SC.Content>
-        <h1>Trung Thanh Nguyen - CEO</h1>
-        <p>
+      <div className="flex flex-col gap-8 p-8">
+        <h1 className="text-center text-lg">Trung Thanh Nguyen - CEO</h1>
+        <p className="text-base">
           Trung is involved in all key decisions from product to marketing and
           leads the company in Vietnam.
         </p>
-        <p>
+        <p className="text-base">
           At the age of 19, Trung co-founded and was CTO of Lozi.vn, an early
           Vietnamese e-commerce startup which has raised around 10 M in funding
           and is still in operations as of now. He left Lozi once it became a
@@ -21,16 +19,16 @@ export function AboutUsCard() {
           recent funding round led by Sequoia) and Anduin Transactions (a Joe
           Lonsdale company) before founding Axie Infinity
         </p>
-        <p>
+        <p className="text-base">
           Trung represented Vietnam in the ACM-ICPC World Final 2014 held in
           Yekaterinburg, Russia.
         </p>
-        <div>
-          <a href="">Linkedin</a>
-          <a href="">Github</a>
-          <a href="">Twitter</a>
+        <div className="flex justify-center items-center gap-4">
+          <a className="underline text-base text-[#fff]" href="">Linkedin</a>
+          <a className="underline text-base text-[#fff]" href="">Github</a>
+          <a className="underline text-base text-[#fff]" href="">Twitter</a>
         </div>
-      </SC.Content>
-    </SC.Container>
+      </div>
+    </div>
   );
 }

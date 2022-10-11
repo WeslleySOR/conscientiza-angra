@@ -1,53 +1,55 @@
-import * as SC from "./style";
-
 export function TipsCard() {
   return (
-    <SC.Container>
-      <SC.ContainerHeader>
-        <h2>Sabão caseiro em barra</h2>
-      </SC.ContainerHeader>
-      <SC.ContainerMain>
-        <SC.ContentSeparator>
-          <strong>Ingredientes: </strong>
-          <ol>
-            <li>2 litros de água quente</li>
-            <li>1 kg de soda cáustica em flocos</li>
-            <li>1 litro de álcool</li>
-            <li>4 litros de óleo de cozinha</li>
-            <li>Óleo essencial de sua preferência</li>
+    <div className="flex flex-col bg-[#262626] text-[#fff] px-8 py-16 m-8">
+      <header className="flex items-center mb-8">
+        <h2 className="text-lg">Sabão caseiro em barra</h2>
+      </header>
+      <main className="flex flex-col gap-8">
+        <div className="flex flex-col">
+          <strong className="text-base">Ingredientes: </strong>
+          <ol className="px-8 list-disc">
+            <li className="text-base">2 litros de água quente</li>
+            <li className="text-base">1 kg de soda cáustica em flocos</li>
+            <li className="text-base">1 litro de álcool</li>
+            <li className="text-base">4 litros de óleo de cozinha</li>
+            <li className="text-base">Óleo essencial de sua preferência</li>
           </ol>
-        </SC.ContentSeparator>
-        <SC.ContentSeparator>
-          <strong>Passo a Passo: </strong>
-          <ol className="decimal">
-            <li>Utilize um balde para colocar a soda cáustica em flocos</li>
-            <li>
+        </div>
+        <div className="flex flex-col">
+          <strong className="text-base">Passo a Passo: </strong>
+          <ol className="px-8 list-decimal">
+            <li className="text-base">
+              Utilize um balde para colocar a soda cáustica em flocos
+            </li>
+            <li className="text-base">
               Vá adicionando de maneira delicada e bem devagar os 2 litros de
               água quente sobre a soda cáustica que está no balde
             </li>
-            <li>
+            <li className="text-base">
               Com o auxílio de uma colher de pau, mexa bem essa mistura até que
               a soda cáustica esteja totalmente dissolvida
             </li>
-            <li>
+            <li className="text-base">
               Adicione os 4 litros de óleo de cozinha a essa mistura do balde e
               mexa por cerca de 20 minutos
             </li>
-            <li>
+            <li className="text-base">
               Após os 20 minutos, adicione o álcool e o óleo essencial de sua
               preferência
             </li>
-            <li>Mexa bem essa mistura, até ficar uma pasta bem consistente</li>
-            <li>
+            <li className="text-base">
+              Mexa bem essa mistura, até ficar uma pasta bem consistente
+            </li>
+            <li className="text-base">
               Coloque a pasta em formas e deixe secar bem, por cerca de 24 horas
               ou mais
             </li>
-            <li>
+            <li className="text-base">
               Depois basta cortar o sabão do tamanho e formato que você quiser
             </li>
           </ol>
-        </SC.ContentSeparator>
-      </SC.ContainerMain>
-    </SC.Container>
+        </div>
+      </main>
+    </div>
   );
 }

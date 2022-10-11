@@ -2,16 +2,15 @@ import { AboutSelectiveCollection } from "./components/AboutSelectiveCollection"
 import { AboutUs } from "./components/AboutUs";
 import { Pevs } from "./components/Pevs";
 import { Tips } from "./components/Tips";
-import * as SC from "./styles/App";
 
 function App() {
   return (
-    <SC.Container>
+    <main className="flex flex-col gap-32 mx-48 pt-[148px] pb-36">
       <AboutSelectiveCollection />
       <Pevs />
       <Tips />
       <AboutUs />
-    </SC.Container>
+    </main >
   );
 }
 
