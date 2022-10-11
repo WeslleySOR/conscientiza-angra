@@ -1,4 +1,4 @@
-import { AboutUsCard } from "../AboutUsCard";
+import { AboutUsCard } from "../../components/AboutUsCard";
 
 export function AboutUs() {
   return (

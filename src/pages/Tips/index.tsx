@@ -1,4 +1,4 @@
-import { TipsCard } from "../TipsCard";
+import { TipsCard } from "../../components/TipsCard";
 
 export function Tips() {
   return (

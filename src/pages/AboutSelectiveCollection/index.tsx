@@ -1,5 +1,3 @@
-import * as SC from "./style";
-
 export function AboutSelectiveCollection() {
   return (
     <div className="scroll-mt-[148px] flex odd:bg-[#262626]" id="sobre-a-coleta">

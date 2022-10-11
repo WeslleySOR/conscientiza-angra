@@ -1,7 +1,7 @@
-import { AboutSelectiveCollection } from "./components/AboutSelectiveCollection";
-import { AboutUs } from "./components/AboutUs";
-import { Pevs } from "./components/Pevs";
-import { Tips } from "./components/Tips";
+import { AboutSelectiveCollection } from "./pages/AboutSelectiveCollection";
+import { AboutUs } from "./pages/AboutUs";
+import { Pevs } from "./pages/Pevs";
+import { Tips } from "./pages/Tips";
 
 function App() {
   return (
