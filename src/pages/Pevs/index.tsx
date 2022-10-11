@@ -1,13 +1,26 @@
 import { localizations } from "../../utils/variables";
 
 export function Pevs() {
+  const getLocationsByDay = (day: number) => {
+    const locations = localizations.filter(
+      (localization) => localization.days === day
+    );
+    if (locations.length > 0) return locations;
+    return [{
+      name: "Nenhum local nesse dia",
+      days: 99
+    }];
+  };
   return (
-    <div className="scroll-mt-[148px] flex flex-col rounded-md bg-[#343434] text-[#fff]" id="pevs">
-      <header className="flex items-center justify-center p-8">
-        <h1 className="text-lg">Pevs</h1>
+    <div
+      className="scroll-mt-[80px] flex flex-col bg-[#343434] text-[#fff]"
+      id="pevs"
+    >
+      <header className="flex items-center justify-center p-6">
+        <h1 className="text-xl">Pevs</h1>
       </header>
-      <main className="flex flex-col gap-8 p-16">
-        <span className="text-base">
+      <main className="flex flex-col py-6 gap-8">
+        <span className="text-base px-6">
           <strong>O que são pevs:</strong> PEV é uma abreviação para Ponto de
           Entrega Voluntária. São coletores instalados em pontos públicos e
           privados estrategicamente posicionados - como próximo à comércios -
@@ -27,14 +40,16 @@ export function Pevs() {
             RESOLUÇÃO CONAMA nº 275, de 25 de abril de 2001:
           </a>
         </span>
-        <ol className="px-8 list-disc">
+        <ol className="list-disc px-10">
           <li className="text-base">AZUL: papel/papelão;</li>
           <li className="text-base">VERMELHO: plástico;</li>
           <li className="text-base">VERDE: vidro;</li>
           <li className="text-base">AMARELO: metal;</li>
           <li className="text-base">PRETO: madeira;</li>
           <li className="text-base">LARANJA: resíduos perigosos;</li>
-          <li className="text-base">BRANCO: resíduos ambulatoriais e de serviços de saúde;</li>
+          <li className="text-base">
+            BRANCO: resíduos ambulatoriais e de serviços de saúde;
+          </li>
           <li className="text-base">ROXO: resíduos radioativos;</li>
           <li className="text-base">MARROM: resíduos orgânicos;</li>
           <li className="text-base">
@@ -42,11 +57,11 @@ export function Pevs() {
             passível de separação.
           </li>
         </ol>
-        <span className="text-base">
+        <span className="text-base px-6">
           Entretanto, na iniciativa privada, existem opções personalizadas e
           divididas apenas em resíduos recicláveis e orgânicos.
         </span>
-        <span className="text-base pt-16 border-t border-solid border-[#fafafa]">
+        <span className="text-base border-t border-solid p-6 border-[#fafafa]">
           Locais:{" "}
           {localizations.length > 0 &&
             localizations
@@ -56,31 +71,72 @@ export function Pevs() {
                   localization.name +
                   (index == localizations.length - 1 ? "" : ", ")
               )}
-          <p>
+          <p className="mt-6">
             <strong>*Somente Angra dos Reis* </strong>
           </p>
         </span>
-        <table className="border-collapse">
-          <tr className="even:bg-[#262626] hover:bg-[#121212]">
-            <th className="border border-solid border-[#ddd] py-3 text-left bg-[#53803e] text-base text-[#fff]">Segunda-Feira</th>
-            <th className="border border-solid border-[#ddd] py-3 text-left bg-[#53803e] text-base text-[#fff]">Terça-Feira</th>
-            <th className="border border-solid border-[#ddd] py-3 text-left bg-[#53803e] text-base text-[#fff]">Quarta-Feira</th>
-            <th className="border border-solid border-[#ddd] py-3 text-left bg-[#53803e] text-base text-[#fff]">Quinta-Feira</th>
-            <th className="border border-solid border-[#ddd] py-3 text-left bg-[#53803e] text-base text-[#fff]">Sexta-Feira</th>
-            <th className="border border-solid border-[#ddd] py-3 text-left bg-[#53803e] text-base text-[#fff]">Sábado</th>
-          </tr>
-          {localizations.length > 0 &&
-            localizations.map((localization) => (
-              <tr className="even:bg-[#262626] hover:bg-[#121212]">
-                <td className="border border-solid border-[#ddd] font-semibold text-sm">{localization.days === 0 ? localization.name : ""}</td>
-                <td className="border border-solid border-[#ddd] font-semibold text-sm">{localization.days === 1 ? localization.name : ""}</td>
-                <td className="border border-solid border-[#ddd] font-semibold text-sm">{localization.days === 2 ? localization.name : ""}</td>
-                <td className="border border-solid border-[#ddd] font-semibold text-sm">{localization.days === 3 ? localization.name : ""}</td>
-                <td className="border border-solid border-[#ddd] font-semibold text-sm">{localization.days === 4 ? localization.name : ""}</td>
-                <td className="border border-solid border-[#ddd] font-semibold text-sm">{localization.days === 5 ? localization.name : ""}</td>
-              </tr>
-            ))}
-        </table>
+        <div className="flex flex-col px-6 gap-6">
+          {localizations.length > 0 && (
+            <>
+            <div>
+              <span>Segunda-Feira: </span>
+              {getLocationsByDay(0).map((location, index) => 
+                <span>
+                  {location.name}{index === getLocationsByDay(0).length - 1 ? "." : ", "}
+                </span>  
+              )}
+            </div>
+            <div>
+              <span>Terça-Feira: </span>
+              {getLocationsByDay(1).map((location, index) => 
+                <span>
+                  {location.name}{index === getLocationsByDay(1).length - 1 ? "." : ", "}
+                </span>  
+              )}
+            </div>
+            <div>
+              <span>Quarta-Feira: </span>
+              {getLocationsByDay(2).map((location, index) => 
+                <span>
+                  {location.name}{index === getLocationsByDay(2).length - 1 ? "." : ", "}
+                </span>  
+              )}
+            </div>
+            <div>
+              <span>Quinta-Feira: </span>
+              {getLocationsByDay(3).map((location, index) => 
+                <span>
+                  {location.name}{index === getLocationsByDay(3).length - 1 ? "." : ", "}
+                </span>  
+              )}
+            </div>
+            <div>
+              <span>Sexta-Feira: </span>
+              {getLocationsByDay(4).map((location, index) => 
+                <span>
+                  {location.name}{index === getLocationsByDay(4).length - 1 ? "." : ", "}
+                </span>  
+              )}
+            </div>
+            <div>
+              <span>Sábado: </span>
+              {getLocationsByDay(5).map((location, index) => 
+                <span>
+                  {location.name}{index === getLocationsByDay(5).length - 1 ? "." : ", "}
+                </span>  
+              )}
+            </div>
+            <div>
+              <span>Domingo: </span>
+              {getLocationsByDay(6).map((location, index) => 
+                <span>
+                  {location.name}{index === getLocationsByDay(6).length - 1 ? "." : ", "}
+                </span>  
+              )}
+            </div>
+            </>
+          )}
+        </div>
       </main>
     </div>
   );

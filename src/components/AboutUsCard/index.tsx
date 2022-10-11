@@ -4,7 +4,7 @@ export function AboutUsCard() {
   return (
     <div className="flex flex-col gap-8 w-96 bg-[#4b7139]">
       <img loading="lazy" src={randomPic} alt="Imagem aleatoria" />
-      <div className="flex flex-col gap-8 p-8">
+      <div className="flex flex-col gap-8">
         <h1 className="text-center text-lg">Trung Thanh Nguyen - CEO</h1>
         <p className="text-base">
           Trung is involved in all key decisions from product to marketing and

@@ -2,7 +2,7 @@ interface ILocalization {
   name: string;
   days: number | number[];
 }
-// Segunda = 0 - Terça = 1 - Quarta = 2 - Quinta = 3 - Sexta = 4 - Sabado = 5
+// Segunda = 0 - Terça = 1 - Quarta = 2 - Quinta = 3 - Sexta = 4 - Sabado = 5 - Domingo = 6
 export const localizations: ILocalization[] = [
   {
     name: "Monsuaba",

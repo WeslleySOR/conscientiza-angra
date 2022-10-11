@@ -2,9 +2,16 @@ import { TipsCard } from "../../components/TipsCard";
 
 export function Tips() {
   return (
-    <div className="scroll-mt-[148px] flex flex-col rounded-md bg-[#343434] text-[#fff]" id="dicas">
-      <h1 className="text-lg p-8 text-center">Dicas de reaproveitamento</h1>
-      <TipsCard />
+    <div
+      className="scroll-mt-[80px] mt-8 flex flex-col bg-[#343434] text-[#fff]"
+      id="dicas"
+    >
+      <header className="flex items-center justify-center p-6">
+        <h1 className="text-xl">Dicas de reaproveitamento</h1>
+      </header>
+      <main>
+        <TipsCard />
+      </main>
     </div>
   );
 }

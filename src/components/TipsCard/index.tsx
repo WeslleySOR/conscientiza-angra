@@ -1,13 +1,13 @@
 export function TipsCard() {
   return (
-    <div className="flex flex-col bg-[#262626] text-[#fff] px-8 py-16 m-8">
-      <header className="flex items-center mb-8">
+    <div className="flex flex-col py-16">
+      <header className="flex justify-center items-center mb-8">
         <h2 className="text-lg">Sabão caseiro em barra</h2>
       </header>
-      <main className="flex flex-col gap-8">
+      <main className="flex flex-col px-10 gap-10">
         <div className="flex flex-col">
           <strong className="text-base">Ingredientes: </strong>
-          <ol className="px-8 list-disc">
+          <ol className="list-disc">
             <li className="text-base">2 litros de água quente</li>
             <li className="text-base">1 kg de soda cáustica em flocos</li>
             <li className="text-base">1 litro de álcool</li>
@@ -17,7 +17,7 @@ export function TipsCard() {
         </div>
         <div className="flex flex-col">
           <strong className="text-base">Passo a Passo: </strong>
-          <ol className="px-8 list-decimal">
+          <ol className="list-decimal">
             <li className="text-base">
               Utilize um balde para colocar a soda cáustica em flocos
             </li>
