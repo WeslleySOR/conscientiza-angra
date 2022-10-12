@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import logoImage from "/assets/logo.svg";
+import logoImage from "/assets/logo2.png";
 
 export function Header() {
   const [pageScrolled, setPageScrolled] = useState(false);
@@ -19,7 +19,7 @@ export function Header() {
     >
       <div className="select-none flex items-center gap-4">
         <img
-          className="w-12 h-12 lg:w-16 lg:h-16"
+          className="w-20 h-20 lg:w-24 lg:h-24"
           src={logoImage}
           alt="Conscientiza Angra Logo"
         />
