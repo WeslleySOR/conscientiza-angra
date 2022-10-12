@@ -1,7 +1,7 @@
 export function AboutSelectiveCollectionComponentWeb() {
   return (
     <div
-      className="scroll-mt-[132px] flex odd:bg-[#262626]"
+      className="scroll-mt-[132px] lg:mx-12 flex"
       id="sobre-a-coleta"
     >
       <div className="select-none flex flex-col flex-1 gap-8 pt-28 pb-36 bg-[#343434] text-[#fff] transition-opacity duration-200 hover:opacity-90">
@@ -12,7 +12,7 @@ export function AboutSelectiveCollectionComponentWeb() {
           previamente separados na fonte geradora.
         </span>
       </div>
-      <div className="select-none flex flex-col flex-1 gap-8 pt-28 pb-36 bg-[#343434] text-[#fff] transition-opacity duration-200 hover:opacity-90">
+      <div className="select-none flex flex-col flex-1 gap-8 pt-28 pb-36 bg-[#262626] text-[#fff] transition-opacity duration-200 hover:opacity-90">
         <h1 className="text-lg text-center">QUAL A SUA IMPORTANCIA? </h1>
         <span className="text-base text-center px-12">
           Evita a disseminação de doenças e contribui para que os resíduos se
@@ -30,7 +30,7 @@ export function AboutSelectiveCollectionComponentWeb() {
           papel, o papelão e alguns tipos de plástico, entre outros
         </span>
       </div>
-      <div className="select-none flex flex-col flex-1 gap-8 pt-28 pb-36 bg-[#343434] text-[#fff] transition-opacity duration-200 hover:opacity-90">
+      <div className="select-none flex flex-col flex-1 gap-8 pt-28 pb-36 bg-[#262626] text-[#fff] transition-opacity duration-200 hover:opacity-90">
         <h1 className="text-lg text-center">
           VOCE SABE QUE SEU LIXO TEM VALOR?
         </h1>
