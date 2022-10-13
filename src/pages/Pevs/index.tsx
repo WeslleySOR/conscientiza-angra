@@ -1,16 +1,15 @@
-import { localizations } from "../../utils/variables";
+import trashCanblack from "/assets/trash-can-black.svg";
+import trashCanblue from "/assets/trash-can-blue.svg";
+import trashCanbrown from "/assets/trash-can-brown.svg";
+import trashCangray from "/assets/trash-can-gray.svg";
+import trashCangreen from "/assets/trash-can-green.svg";
+import trashCanorange from "/assets/trash-can-orange.svg";
+import trashCanpurple from "/assets/trash-can-purple.svg";
+import trashCanred from "/assets/trash-can-red.svg";
+import trashCanwhite from "/assets/trash-can-white.svg";
+import trashCanyellow from "/assets/trash-can-yellow.svg";
 
 export function Pevs() {
-  const getLocationsByDay = (day: number) => {
-    const locations = localizations.filter(
-      (localization) => localization.days === day
-    );
-    if (locations.length > 0) return locations;
-    return [{
-      name: "Nenhum local nesse dia",
-      days: 99
-    }];
-  };
   return (
     <div
       className="scroll-mt-[192px] mt-8 flex flex-col text-[#000] md:scroll-mt-[112px] lg:scroll-mt-[132px] lg:mx-12"
@@ -40,21 +39,49 @@ export function Pevs() {
             RESOLUÇÃO CONAMA nº 275, de 25 de abril de 2001:
           </a>
         </span>
-        <ol className="list-disc px-10">
-          <li className="text-base">AZUL: papel/papelão;</li>
-          <li className="text-base">VERMELHO: plástico;</li>
-          <li className="text-base">VERDE: vidro;</li>
-          <li className="text-base">AMARELO: metal;</li>
-          <li className="text-base">PRETO: madeira;</li>
-          <li className="text-base">LARANJA: resíduos perigosos;</li>
-          <li className="text-base">
-            BRANCO: resíduos ambulatoriais e de serviços de saúde;
+        <ol className="flex flex-col gap-1 px-6">
+          <li className="flex gap-2 text-base">
+            <img className="w-6 h-6" src={trashCanblue} alt="Icone da lixeira Azul" />
+            <span>AZUL: papel/papelão;</span>
           </li>
-          <li className="text-base">ROXO: resíduos radioativos;</li>
-          <li className="text-base">MARROM: resíduos orgânicos;</li>
-          <li className="text-base">
-            CINZA: resíduo geral não reciclável ou misturado, ou contaminado não
-            passível de separação.
+          <li className="flex gap-2 text-base">
+            <img className="w-6 h-6" src={trashCanred} alt="Icone da lixeira Vermelha" />
+            <span>VERMELHO: plástico;</span>
+          </li>
+          <li className="flex gap-2 text-base">
+            <img className="w-6 h-6" src={trashCangreen} alt="Icone da lixeira Verde" />
+            <span>VERDE: vidro;</span>
+          </li>
+          <li className="flex gap-2 text-base">
+            <img className="w-6 h-6" src={trashCanyellow} alt="Icone da lixeira Amarela" />
+            <span>AMARELO: metal;</span>
+          </li>
+          <li className="flex gap-2 text-base">
+            <img className="w-6 h-6" src={trashCanblack} alt="Icone da lixeira Preta" />
+            <span>PRETO: madeira;</span>
+          </li>
+          <li className="flex gap-2 text-base">
+            <img className="w-6 h-6" src={trashCanorange} alt="Icone da lixeira Laranja" />
+            <span>LARANJA: resíduos perigosos;</span>
+          </li>
+          <li className="flex gap-2 text-base">
+            <img className="w-6 h-6" src={trashCanwhite} alt="Icone da lixeira Branca" />
+            <span>BRANCO: resíduos ambulatoriais e de serviços de saúde;</span>
+          </li>
+          <li className="flex gap-2 text-base">
+            <img className="w-6 h-6" src={trashCanpurple} alt="Icone da lixeira Roxa" />
+            <span>ROXO: resíduos radioativos;</span>
+          </li>
+          <li className="flex gap-2 text-base">
+            <img className="w-6 h-6" src={trashCanbrown} alt="Icone da lixeira Marrom" />
+            <span>MARROM: resíduos orgânicos;</span>
+          </li>
+          <li className="flex gap-2 text-base">
+            <img className="w-6 h-6" src={trashCangray} alt="Icone da lixeira Cinza" />
+            <span>
+              CINZA: resíduo geral não reciclável ou misturado, ou contaminado
+              não passível de separação.
+            </span>
           </li>
         </ol>
         <span className="text-base px-6">
