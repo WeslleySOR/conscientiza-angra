@@ -1,7 +1,7 @@
 export function AboutSelectiveCollectionComponentWeb() {
   return (
     <div
-      className="scroll-mt-[132px] lg:mx-12 flex"
+      className="scroll-mt-[192px] lg:mx-12 flex"
       id="sobre-a-coleta"
     >
       <div className="select-none flex flex-col flex-1 gap-8 pt-28 pb-36 bg-[#343434] text-[#fff] transition-opacity duration-200 hover:opacity-90">
