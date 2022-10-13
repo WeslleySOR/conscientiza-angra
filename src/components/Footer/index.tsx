@@ -1,16 +1,13 @@
-import linkedinIcon from "/assets/icons8-linkedin.svg";
-import githubIcon from "/assets/icons8-github.svg";
-
 export function Footer() {
   return (
-    <footer className="flex items-center justify-center gap-4 bg-[#7aaf60] p-4">
+    <footer className="flex flex-col items-center justify-center gap-2 bg-[#7aaf60] p-4">
       <span className="text-[#000] font-medium">© 2022 Weslley SOR</span>
-      <div className="flex gap-2">
-        <a href="https://www.linkedin.com/in/weslleysor/" target="__blank">
-          <img className="w-6 h-6" src={linkedinIcon} alt="" />
+      <div className="flex gap-4">
+        <a className="underline font-medium" href="https://www.linkedin.com/in/weslleysor/" target="__blank">
+          Linkedin
         </a>
-        <a href="https://github.com/WeslleySOR" target="__blank">
-          <img className="w-6 h-6" src={githubIcon} alt="" />
+        <a className="underline font-medium" href="https://github.com/WeslleySOR" target="__blank">
+          Github
         </a>
       </div>
     </footer>

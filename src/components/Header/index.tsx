@@ -40,6 +40,12 @@ export function Header() {
         </a>
         <a
           className="text-[#fff] no-underline text-sm p-4 md:text-base font-medium md:p-5 underline-offset-8 lg:text-lg hover:underline"
+          href="#rotas"
+        >
+          Rotas
+        </a>
+        <a
+          className="text-[#fff] no-underline text-sm p-4 md:text-base font-medium md:p-5 underline-offset-8 lg:text-lg hover:underline"
           href="#dicas"
         >
           Dicas
