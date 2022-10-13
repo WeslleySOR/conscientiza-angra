@@ -17,7 +17,7 @@ export function AboutSelectiveCollectionComponentMobile() {
   return (
     <>
       <div
-        className="scroll-mt-[192px] relative flex md:scroll-mt-[112px] lg:scroll-mt-[132px] xl:mx-12 xl:mt-8"
+        className="scroll-mt-[192px] relative flex border border-solid border-zinc-900 md:scroll-mt-[112px] lg:scroll-mt-[132px] xl:mx-12 xl:mt-8"
         id="sobre-a-coleta"
       >
         <div ref={sliderRef} className="keen-slider">

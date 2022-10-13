@@ -6,7 +6,7 @@ import { Tips } from "./pages/Tips";
 
 function App() {
   return (
-    <main className={`min-h-screen w-screen mt-8 mb-4 `}>
+    <main className={`min-h-screen w-screen mt-8 mb-4`}>
       <AboutSelectiveCollection />
       <Pevs />
       <Routes />
