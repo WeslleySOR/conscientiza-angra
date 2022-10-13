@@ -1,9 +1,13 @@
+import sabaoImage from "/assets/sabao-em-barra.jpeg";
+import copoReciclado from "/assets/copo-reciclado.jpeg";
+
 export function TipsCard() {
   return (
     <>
       <div className="flex flex-col py-16">
-        <header className="flex justify-center items-center mb-8">
+        <header className="flex flex-col justify-center items-center mb-8">
           <h2 className="text-lg">Sabão caseiro em barra</h2>
+          <img className="max-w-[630px]" src={sabaoImage} alt="" />
         </header>
         <main className="flex flex-col px-10 gap-10">
           <div className="flex flex-col">
@@ -53,8 +57,9 @@ export function TipsCard() {
         </main>
       </div>
       <div className="flex flex-col py-16">
-        <header className="flex justify-center items-center mb-8">
+        <header className="flex flex-col justify-center items-center mb-8">
           <h2 className="text-lg">Copos reciclados</h2>
+          <img className="max-w-[630px]" src={copoReciclado} alt="" />
         </header>
         <main className="flex flex-col px-10 gap-10">
           <div className="flex flex-col">

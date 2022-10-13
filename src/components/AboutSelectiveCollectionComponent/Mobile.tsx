@@ -17,20 +17,20 @@ export function AboutSelectiveCollectionComponentMobile() {
   return (
     <>
       <div
-        className="scroll-mt-[192px] relative flex odd:bg-[#262626] md:scroll-mt-[112px] lg:scroll-mt-[132px] xl:mx-12 xl:mt-8"
+        className="scroll-mt-[192px] relative flex md:scroll-mt-[112px] lg:scroll-mt-[132px] xl:mx-12 xl:mt-8"
         id="sobre-a-coleta"
       >
         <div ref={sliderRef} className="keen-slider">
-          <div className="keen-slider__slide number-slide1 select-none flex flex-col flex-1 gap-8 pt-28 pb-36 bg-[#343434] text-[#fff] transition-opacity duration-200 hover:opacity-90">
-            <h1 className="text-lg text-center">O QUE É COLETA SELETIVA?</h1>
+          <div className="keen-slider__slide number-slide1 select-none flex flex-col flex-1 gap-8 pt-16 pb-24 text-[#000] transition-opacity duration-200 hover:opacity-90">
+            <h1 className="text-lg font-medium text-center">O QUE É COLETA SELETIVA?</h1>
             <span className="text-base text-center px-12">
               Coleta seletiva ou recolha seletiva é o termo utilizado para o
               recolhimento dos materiais que são possíveis de serem reciclados,
               previamente separados na fonte geradora.
             </span>
           </div>
-          <div className="keen-slider__slide number-slide1 select-none flex flex-col flex-1 gap-8 pt-28 pb-36 bg-[#343434] text-[#fff] transition-opacity duration-200 hover:opacity-90">
-            <h1 className="text-lg text-center">QUAL A SUA IMPORTANCIA? </h1>
+          <div className="keen-slider__slide number-slide1 select-none flex flex-col flex-1 gap-8 pt-16 pb-24 text-[#000] transition-opacity duration-200 hover:opacity-90">
+            <h1 className="text-lg font-medium text-center">QUAL A SUA IMPORTANCIA? </h1>
             <span className="text-base text-center px-12">
               Evita a disseminação de doenças e contribui para que os resíduos
               se encaminhem para os seus devidos lugares. Acima Falamos sobre a
@@ -39,8 +39,8 @@ export function AboutSelectiveCollectionComponentMobile() {
               incorreta.
             </span>
           </div>
-          <div className="keen-slider__slide number-slide1 select-none flex flex-col flex-1 gap-8 pt-28 pb-36 bg-[#343434] text-[#fff] transition-opacity duration-200 hover:opacity-90">
-            <h1 className="text-lg text-center">COMO DEVE SER FEITA</h1>
+          <div className="keen-slider__slide number-slide1 select-none flex flex-col flex-1 gap-8 pt-16 pb-24 text-[#000] transition-opacity duration-200 hover:opacity-90">
+            <h1 className="text-lg font-medium text-center">COMO DEVE SER FEITA</h1>
             <span className="text-base text-center px-12">
               Exige que os descartes sejam separados em úmidos, secos,
               recicláveis e orgânicos. E dentro dessas categorias há
@@ -49,8 +49,8 @@ export function AboutSelectiveCollectionComponentMobile() {
               plástico, entre outros
             </span>
           </div>
-          <div className="keen-slider__slide number-slide1 select-none flex flex-col flex-1 gap-8 pt-28 pb-36 bg-[#343434] text-[#fff] transition-opacity duration-200 hover:opacity-90">
-            <h1 className="text-lg text-center">
+          <div className="keen-slider__slide number-slide1 select-none flex flex-col flex-1 gap-8 pt-16 pb-24 text-[#000] transition-opacity duration-200 hover:opacity-90">
+            <h1 className="text-lg font-medium text-center">
               VOCE SABE QUE SEU LIXO TEM VALOR?
             </h1>
             <span className="text-base text-center px-12">
