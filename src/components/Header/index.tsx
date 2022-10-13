@@ -27,31 +27,31 @@ export function Header() {
       </div>
       <nav className="flex items-center">
         <a
-          className="text-[#fff] no-underline text-sm p-4 md:text-base font-medium md:p-5 underline-offset-8 lg:text-lg hover:underline"
+          className="text-[#fff] no-underline text-xs p-4 md:text-sm font-medium md:p-5 underline-offset-8 lg:text-lg hover:underline"
           href="#sobre-a-coleta"
         >
           Sobre a coleta
         </a>
         <a
-          className="text-[#fff] no-underline text-sm p-4 md:text-base font-medium md:p-5 underline-offset-8 lg:text-lg hover:underline"
+          className="text-[#fff] no-underline text-xs p-4 md:text-sm font-medium md:p-5 underline-offset-8 lg:text-lg hover:underline"
           href="#pevs"
         >
           Pevs
         </a>
         <a
-          className="text-[#fff] no-underline text-sm p-4 md:text-base font-medium md:p-5 underline-offset-8 lg:text-lg hover:underline"
+          className="text-[#fff] no-underline text-xs p-4 md:text-sm font-medium md:p-5 underline-offset-8 lg:text-lg hover:underline"
           href="#rotas"
         >
           Rotas
         </a>
         <a
-          className="text-[#fff] no-underline text-sm p-4 md:text-base font-medium md:p-5 underline-offset-8 lg:text-lg hover:underline"
+          className="text-[#fff] no-underline text-xs p-4 md:text-sm font-medium md:p-5 underline-offset-8 lg:text-lg hover:underline"
           href="#dicas"
         >
           Dicas
         </a>
         <a
-          className="text-[#fff] no-underline text-sm p-4 md:text-base font-medium md:p-5 underline-offset-8 lg:text-lg hover:underline"
+          className="text-[#fff] no-underline text-xs p-4 md:text-sm font-medium md:p-5 underline-offset-8 lg:text-lg hover:underline"
           href="#sobre-nos"
         >
           Sobre nós
