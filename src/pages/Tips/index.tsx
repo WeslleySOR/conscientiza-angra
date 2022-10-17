@@ -1,17 +1,15 @@
+import { BoxComponentWrapper } from "../../components/BoxComponent";
+import { BoxComponentHeader } from "../../components/BoxComponent/Header";
+import { BoxComponentMain } from "../../components/BoxComponent/Main";
 import { TipsCard } from "../../components/TipsCard";
 
 export function Tips() {
   return (
-    <div
-      className="scroll-mt-[192px] mt-8 flex flex-col text-[#000] md:scroll-mt-[96px] lg:scroll-mt-[132px] lg:mx-12"
-      id="dicas"
-    >
-      <header className="flex items-center justify-center p-6">
-        <h1 className="text-2xl md:text-3xl">Dicas de reaproveitamento</h1>
-      </header>
-      <main>
+    <BoxComponentWrapper attributes={{ id: "dicas" }}>
+      <BoxComponentHeader title="Dicas de reaproveitamento" />
+      <BoxComponentMain>
         <TipsCard />
-      </main>
-    </div>
+      </BoxComponentMain>
+    </BoxComponentWrapper>
   );
 }

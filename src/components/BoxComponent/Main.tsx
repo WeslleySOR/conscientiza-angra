@@ -3,10 +3,10 @@ interface IBoxComponentMain {
   attributes?: React.HTMLAttributes<HTMLDivElement>;
 }
 
-export function BoxComponentMain({children, attributes}: IBoxComponentMain) {
+export function BoxComponentMain({ children, attributes }: IBoxComponentMain) {
   return (
-    <main {...attributes}>
+    <main className="flex flex-col py-6 gap-8" {...attributes}>
       {children}
     </main>
-  )
+  );
 }

@@ -15,12 +15,8 @@ import trashCanyellow from "/assets/trash-can-yellow.svg";
 export function Pevs() {
   return (
     <BoxComponentWrapper attributes={{ id: "pevs" }}>
-      <BoxComponentHeader
-        attributes={{ className: "flex items-center justify-center p-6" }}
-      >
-        <h1 className="text-2xl md:text-3xl">Pevs</h1>
-      </BoxComponentHeader>
-      <BoxComponentMain attributes={{ className: "flex flex-col py-6 gap-8" }}>
+      <BoxComponentHeader title="Pevs"/>
+      <BoxComponentMain>
         <span className="text-base px-6">
           <strong>O que são pevs:</strong> PEV é uma abreviação para Ponto de
           Entrega Voluntária. São coletores instalados em pontos públicos e
