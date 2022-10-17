@@ -1,3 +1,6 @@
+import { BoxComponentWrapper } from "../../components/BoxComponent";
+import { BoxComponentHeader } from "../../components/BoxComponent/Header";
+import { BoxComponentMain } from "../../components/BoxComponent/Main";
 import trashCanblack from "/assets/trash-can-black.svg";
 import trashCanblue from "/assets/trash-can-blue.svg";
 import trashCanbrown from "/assets/trash-can-brown.svg";
@@ -11,14 +14,13 @@ import trashCanyellow from "/assets/trash-can-yellow.svg";
 
 export function Pevs() {
   return (
-    <div
-      className="scroll-mt-[192px] mt-8 flex flex-col text-[#000] md:scroll-mt-[112px] lg:scroll-mt-[132px] lg:mx-12"
-      id="pevs"
-    >
-      <header className="flex items-center justify-center p-6">
+    <BoxComponentWrapper attributes={{ id: "pevs" }}>
+      <BoxComponentHeader
+        attributes={{ className: "flex items-center justify-center p-6" }}
+      >
         <h1 className="text-2xl md:text-3xl">Pevs</h1>
-      </header>
-      <main className="flex flex-col py-6 gap-8">
+      </BoxComponentHeader>
+      <BoxComponentMain attributes={{ className: "flex flex-col py-6 gap-8" }}>
         <span className="text-base px-6">
           <strong>O que são pevs:</strong> PEV é uma abreviação para Ponto de
           Entrega Voluntária. São coletores instalados em pontos públicos e
@@ -41,43 +43,83 @@ export function Pevs() {
         </span>
         <ol className="flex flex-col gap-1 px-6">
           <li className="flex gap-2 text-base">
-            <img className="w-6 h-6" src={trashCanblue} alt="Icone da lixeira Azul" />
+            <img
+              className="w-6 h-6"
+              src={trashCanblue}
+              alt="Icone da lixeira Azul"
+            />
             <span>AZUL: papel/papelão;</span>
           </li>
           <li className="flex gap-2 text-base">
-            <img className="w-6 h-6" src={trashCanred} alt="Icone da lixeira Vermelha" />
+            <img
+              className="w-6 h-6"
+              src={trashCanred}
+              alt="Icone da lixeira Vermelha"
+            />
             <span>VERMELHO: plástico;</span>
           </li>
           <li className="flex gap-2 text-base">
-            <img className="w-6 h-6" src={trashCangreen} alt="Icone da lixeira Verde" />
+            <img
+              className="w-6 h-6"
+              src={trashCangreen}
+              alt="Icone da lixeira Verde"
+            />
             <span>VERDE: vidro;</span>
           </li>
           <li className="flex gap-2 text-base">
-            <img className="w-6 h-6" src={trashCanyellow} alt="Icone da lixeira Amarela" />
+            <img
+              className="w-6 h-6"
+              src={trashCanyellow}
+              alt="Icone da lixeira Amarela"
+            />
             <span>AMARELO: metal;</span>
           </li>
           <li className="flex gap-2 text-base">
-            <img className="w-6 h-6" src={trashCanblack} alt="Icone da lixeira Preta" />
+            <img
+              className="w-6 h-6"
+              src={trashCanblack}
+              alt="Icone da lixeira Preta"
+            />
             <span>PRETO: madeira;</span>
           </li>
           <li className="flex gap-2 text-base">
-            <img className="w-6 h-6" src={trashCanorange} alt="Icone da lixeira Laranja" />
+            <img
+              className="w-6 h-6"
+              src={trashCanorange}
+              alt="Icone da lixeira Laranja"
+            />
             <span>LARANJA: resíduos perigosos;</span>
           </li>
           <li className="flex gap-2 text-base">
-            <img className="w-6 h-6" src={trashCanwhite} alt="Icone da lixeira Branca" />
+            <img
+              className="w-6 h-6"
+              src={trashCanwhite}
+              alt="Icone da lixeira Branca"
+            />
             <span>BRANCO: resíduos ambulatoriais e de serviços de saúde;</span>
           </li>
           <li className="flex gap-2 text-base">
-            <img className="w-6 h-6" src={trashCanpurple} alt="Icone da lixeira Roxa" />
+            <img
+              className="w-6 h-6"
+              src={trashCanpurple}
+              alt="Icone da lixeira Roxa"
+            />
             <span>ROXO: resíduos radioativos;</span>
           </li>
           <li className="flex gap-2 text-base">
-            <img className="w-6 h-6" src={trashCanbrown} alt="Icone da lixeira Marrom" />
+            <img
+              className="w-6 h-6"
+              src={trashCanbrown}
+              alt="Icone da lixeira Marrom"
+            />
             <span>MARROM: resíduos orgânicos;</span>
           </li>
           <li className="flex gap-2 text-base">
-            <img className="w-6 h-6" src={trashCangray} alt="Icone da lixeira Cinza" />
+            <img
+              className="w-6 h-6"
+              src={trashCangray}
+              alt="Icone da lixeira Cinza"
+            />
             <span>
               CINZA: resíduo geral não reciclável ou misturado, ou contaminado
               não passível de separação.
@@ -88,7 +130,7 @@ export function Pevs() {
           Entretanto, na iniciativa privada, existem opções personalizadas e
           divididas apenas em resíduos recicláveis e orgânicos.
         </span>
-      </main>
-    </div>
+      </BoxComponentMain>
+    </BoxComponentWrapper>
   );
 }
