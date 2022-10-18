@@ -2,19 +2,15 @@ import copoReciclado from "/assets/copo-reciclado.jpeg";
 
 export function TipTwo() {
   return (
-    <div className="flex flex-col py-16">
-      <header className="flex flex-col justify-center items-center mb-8">
-        <h2 className="text-lg">Copos reciclados</h2>
-        <img
-          className="max-w-full md:max-w-[630px]"
-          src={copoReciclado}
-          alt=""
-        />
-      </header>
-      <main className="flex flex-col px-10 gap-10">
-        <div className="flex flex-col">
-          <strong className="text-base">Você vai precisar de: </strong>
-          <ol className="list-disc">
+    <div className="flex flex-col items-center gap-6 h-fit">
+      <aside className="w-fit flex flex-col justify-center items-center">
+        <img className="max-w-full md:max-w-[630px]" src={copoReciclado} alt="" />
+        <h2 className="text-lg font-semibold">Copos reciclados</h2>
+      </aside>
+      <div className="flex flex-col gap-6 px-4">
+        <div className="h-fit flex flex-col gap-4 w-fit">
+        <strong className="text-base">Você vai precisar de: </strong>
+          <ol className="list-disc px-5">
             <li className="text-base">Garrafa;</li>
             <li className="text-base">Linha;</li>
             <li className="text-base">Removedor de esmalte para unhas;</li>
@@ -22,9 +18,9 @@ export function TipTwo() {
             <li className="text-base">Lixa.</li>
           </ol>
         </div>
-        <div className="flex flex-col">
-          <strong className="text-base">Modo de fazer:</strong>
-          <ol className="list-decimal">
+        <div className="h-fit flex flex-col gap-4 w-fit">
+        <strong className="text-base">Modo de fazer:</strong>
+          <ol className="list-decimal px-5">
             <li className="text-base">
               Enrole a linha em volta da garrafa seis vezes e amarre-a.
             </li>
@@ -46,7 +42,7 @@ export function TipTwo() {
             <li className="text-base">Está pronto para uso!</li>
           </ol>
         </div>
-      </main>
+      </div>
     </div>
   );
 }

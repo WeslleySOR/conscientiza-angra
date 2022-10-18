@@ -2,15 +2,15 @@ import sabaoImage from "/assets/sabao-em-barra.jpeg";
 
 export function TipOne() {
   return (
-    <div className="flex flex-col py-16">
-      <header className="flex flex-col justify-center items-center mb-8">
-        <h2 className="text-lg">Sabão caseiro em barra</h2>
+    <div className="flex flex-col items-center gap-6 h-fit pb-6 border-b border-solid border-[#dbdbdb]">
+      <aside className="w-fit flex flex-col justify-center items-center">
         <img className="max-w-full md:max-w-[630px]" src={sabaoImage} alt="" />
-      </header>
-      <main className="flex flex-col px-10 gap-10">
-        <div className="flex flex-col">
+        <h2 className="text-lg font-semibold">Sabão caseiro em barra</h2>
+      </aside>
+      <div className="flex flex-col gap-6 px-4">
+        <div className="h-fit flex flex-col gap-4 w-fit">
           <strong className="text-base">Ingredientes: </strong>
-          <ol className="list-disc">
+          <ol className="list-disc px-5">
             <li className="text-base">2 litros de água quente</li>
             <li className="text-base">1 kg de soda cáustica em flocos</li>
             <li className="text-base">1 litro de álcool</li>
@@ -18,9 +18,9 @@ export function TipOne() {
             <li className="text-base">Óleo essencial de sua preferência</li>
           </ol>
         </div>
-        <div className="flex flex-col">
+        <div className="h-fit flex flex-col gap-4 w-fit">
           <strong className="text-base">Passo a Passo: </strong>
-          <ol className="list-decimal">
+          <ol className="list-decimal px-5">
             <li className="text-base">
               Utilize um balde para colocar a soda cáustica em flocos
             </li>
@@ -52,7 +52,7 @@ export function TipOne() {
             </li>
           </ol>
         </div>
-      </main>
+      </div>
     </div>
   );
 }
