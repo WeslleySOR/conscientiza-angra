@@ -14,7 +14,7 @@ import trashCanyellow from "/assets/trash-can-yellow.svg";
 
 export function Pevs() {
   return (
-    <BoxComponentWrapper attributes={{ id: "pevs" }}>
+    <BoxComponentWrapper attributes={{ id: "pevs", "aria-label": "Área onde explica o que são pevs" }}>
       <BoxComponentHeader title="Pevs"/>
       <BoxComponentMain>
         <span className="text-base px-6">

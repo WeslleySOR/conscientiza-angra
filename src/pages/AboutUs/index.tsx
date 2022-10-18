@@ -6,7 +6,7 @@ import { BoxComponentMain } from "../../components/BoxComponent/Main";
 
 export function AboutUs() {
   return (
-    <BoxComponentWrapper attributes={{ id: "sobre-nos" }}>
+    <BoxComponentWrapper attributes={{ id: "sobre-nos", "aria-label": "Área onde é falado sobre o grupo do projeto" }}>
       <BoxComponentHeader title="Sobre nós" />
       <BoxComponentMain>
         <span className="text-base text-center">
@@ -16,7 +16,7 @@ export function AboutUs() {
         </span>
         <div className="mt-8 flex">
           <div className="flex flex-col gap-8 w-full">
-            <img loading="lazy" src={grupoDePessoas} alt="Imagem aleatoria" />
+            <img loading="lazy" src={grupoDePessoas} alt="Imagem grupo de pessoas" />
             <div className="flex flex-col items-center gap-8">
               <h1 className="text-center text-lg">
                 Turma: Assistente de logística- Senac / Angra dos Reis

@@ -3,6 +3,7 @@ export function AboutSelectiveCollectionComponentWeb() {
     <div
       className="scroll-mt-[192px] lg:mx-12 flex"
       id="sobre-a-coleta"
+      aria-label="Área onde fala sobre a coleta seletiva (Web)"
     >
       <div className="select-none flex flex-col flex-1 gap-8 pt-28 pb-36 bg-[#00244A] text-[#fff] transition-opacity duration-200 hover:opacity-90">
         <h1 className="font-medium text-xl text-center">O QUE É COLETA SELETIVA?</h1>

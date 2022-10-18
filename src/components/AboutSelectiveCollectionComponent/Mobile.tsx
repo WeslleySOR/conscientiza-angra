@@ -19,6 +19,7 @@ export function AboutSelectiveCollectionComponentMobile() {
       <div
         className="scroll-mt-[192px] relative flex md:scroll-mt-[112px] lg:scroll-mt-[132px] xl:mx-12 xl:mt-8"
         id="sobre-a-coleta"
+        aria-label="Área onde fala sobre a coleta seletiva (Mobile)"
       >
         <div ref={sliderRef} className="keen-slider">
           <div className="keen-slider__slide number-slide1 select-none flex flex-col flex-1 gap-8 pt-16 pb-24 text-[#000] transition-opacity duration-200 hover:opacity-90">
@@ -69,6 +70,7 @@ export function AboutSelectiveCollectionComponentMobile() {
           ].map((idx) => {
             return (
               <button
+                aria-label={`Change slide to picture number ${idx + 1}`}
                 key={idx}
                 onClick={() => {
                   instanceRef.current?.moveToIdx(idx);

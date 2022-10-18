@@ -7,7 +7,7 @@ import { TipTwo } from "../../components/TipsCards/TipTwo";
 
 export function Tips() {
   return (
-    <BoxComponentWrapper attributes={{ id: "dicas" }}>
+    <BoxComponentWrapper attributes={{ id: "dicas", "aria-label": "Área de dicas para reaproveitamento" }}>
       <BoxComponentHeader title="Dicas de reaproveitamento" />
       <BoxComponentMain>
         <TipOne />
