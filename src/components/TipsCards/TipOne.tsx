@@ -7,8 +7,8 @@ export function TipOne() {
         <img className="max-w-full md:max-w-[630px]" src={sabaoImage} alt="" />
         <h2 className="text-lg font-semibold">Sabão caseiro em barra</h2>
       </aside>
-      <div className="flex flex-col gap-6 px-4">
-        <div className="h-fit flex flex-col gap-4 w-fit">
+      <div className="flex flex-col gap-6 px-4 w-full">
+        <div className="h-fit flex flex-col gap-4 w-full">
           <strong className="text-base">Ingredientes: </strong>
           <ol className="list-disc px-5">
             <li className="text-base">2 litros de água quente</li>
@@ -18,7 +18,7 @@ export function TipOne() {
             <li className="text-base">Óleo essencial de sua preferência</li>
           </ol>
         </div>
-        <div className="h-fit flex flex-col gap-4 w-fit">
+        <div className="h-fit flex flex-col gap-4 w-full">
           <strong className="text-base">Passo a Passo: </strong>
           <ol className="list-decimal px-5">
             <li className="text-base">

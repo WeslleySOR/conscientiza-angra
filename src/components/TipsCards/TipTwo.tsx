@@ -7,8 +7,8 @@ export function TipTwo() {
         <img className="max-w-full md:max-w-[630px]" src={copoReciclado} alt="" />
         <h2 className="text-lg font-semibold">Copos reciclados</h2>
       </aside>
-      <div className="flex flex-col gap-6 px-4">
-        <div className="h-fit flex flex-col gap-4 w-fit">
+      <div className="flex flex-col gap-6 px-4 w-full">
+        <div className="h-fit flex flex-col gap-4 w-full">
         <strong className="text-base">Você vai precisar de: </strong>
           <ol className="list-disc px-5">
             <li className="text-base">Garrafa;</li>
@@ -18,7 +18,7 @@ export function TipTwo() {
             <li className="text-base">Lixa.</li>
           </ol>
         </div>
-        <div className="h-fit flex flex-col gap-4 w-fit">
+        <div className="h-fit flex flex-col gap-4 w-full">
         <strong className="text-base">Modo de fazer:</strong>
           <ol className="list-decimal px-5">
             <li className="text-base">

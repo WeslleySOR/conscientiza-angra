@@ -8,3 +8,7 @@ body {
 html {
   @apply font-montserrat scroll-smooth;
 }
+
+li:not(:first-child) {
+  @apply mt-2;
+}
