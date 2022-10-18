@@ -13,7 +13,7 @@ export function Header() {
 
   return (
     <header
-      className={`z-50 sticky top-0 flex flex-col items-center md:flex-row md:justify-around py-4 w-full bg-[#7aaf60] text-[#fff] transition-opacity duration-300 ${
+      className={`z-50 sticky top-0 flex flex-col items-center md:flex-row md:justify-around py-4 w-full bg-[#00152b] text-[#fff] transition-opacity duration-300 ${
         pageScrolled ? "opacity-95" : "opacity-100"
       }`}
     >
