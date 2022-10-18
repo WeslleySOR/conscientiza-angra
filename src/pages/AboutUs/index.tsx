@@ -1,4 +1,4 @@
-import { AboutUsCard } from "../../components/AboutUsCard";
+import grupoDePessoas from "/assets/grupo-de-pessoas.png";
 
 import { BoxComponentWrapper } from "../../components/BoxComponent";
 import { BoxComponentHeader } from "../../components/BoxComponent/Header";
@@ -15,7 +15,26 @@ export function AboutUs() {
           natureza.
         </span>
         <div className="mt-8 flex">
-          <AboutUsCard />
+          <div className="flex flex-col gap-8 w-full">
+            <img loading="lazy" src={grupoDePessoas} alt="Imagem aleatoria" />
+            <div className="flex flex-col items-center gap-8">
+              <h1 className="text-center text-lg">
+                Turma: Assistente de logística- Senac / Angra dos Reis
+              </h1>
+              <p className="text-base text-center">
+                Alunos: Ana, Kassiane, Maria Vitória, Maria Clara, Luiz, João
+                Pedro, Gislaine, Joyce, Rodrigo e Jeniffer.
+              </p>
+              <div className="flex justify-center items-center gap-4">
+                <a
+                  className="underline underline-offset-4 text-base text-[#000]"
+                  href="https://www.instagram.com/coletaseletivaangra/"
+                >
+                  Instagram
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </BoxComponentMain>
     </BoxComponentWrapper>

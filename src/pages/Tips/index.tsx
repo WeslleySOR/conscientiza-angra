@@ -2,8 +2,8 @@ import { BoxComponentWrapper } from "../../components/BoxComponent";
 import { BoxComponentHeader } from "../../components/BoxComponent/Header";
 import { BoxComponentMain } from "../../components/BoxComponent/Main";
 
-import { TipOne } from "../../components/TipsCard/TipOne";
-import { TipTwo } from "../../components/TipsCard/TipTwo";
+import { TipOne } from "../../components/TipsCards/TipOne";
+import { TipTwo } from "../../components/TipsCards/TipTwo";
 
 export function Tips() {
   return (
